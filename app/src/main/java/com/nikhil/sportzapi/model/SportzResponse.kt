@@ -233,9 +233,9 @@ data class PowerPlay(
 ) : java.io.Serializable
 
 data class Teams(
-    @SerializedName("4")
+    @SerializedName("4", alternate = ["6"])
     val n4: n4,
-    @SerializedName("5")
+    @SerializedName("5", alternate = ["7"])
     val n5: n5,
 ) : java.io.Serializable
 
@@ -249,27 +249,27 @@ data class n4(
 ) : java.io.Serializable
 
 data class Players(
-    @SerializedName("3632")
+    @SerializedName("3632", alternate = ["63084"])
     val n3632: n3632,
-    @SerializedName("3722")
+    @SerializedName("3722",alternate = ["57492"])
     val n3722: n3722,
-    @SerializedName("3852")
+    @SerializedName("3852",alternate = ["59429"])
     val n3852: n3852,
-    @SerializedName("4176")
+    @SerializedName("4176",alternate = ["3472"])
     val n4176: n4176,
-    @SerializedName("4532")
+    @SerializedName("4532",alternate = ["2734"])
     val n4532: n4532,
-    @SerializedName("5132")
+    @SerializedName("5132",alternate = ["4038"])
     val n5132: n5132,
-    @SerializedName("9844")
+    @SerializedName("9844",alternate = ["65739"])
     val n9844: n9844,
-    @SerializedName("63187")
+    @SerializedName("63187",alternate = ["64073"])
     val n63187: n63187,
-    @SerializedName("63751")
+    @SerializedName("63751",alternate = ["64321"])
     val n63751: n63751,
-    @SerializedName("65867")
+    @SerializedName("65867",alternate = ["64306"])
     val n65867: n65867,
-    @SerializedName("66818")
+    @SerializedName("66818",alternate = ["66833"])
     val n66818: n66818,
 ) : java.io.Serializable
 
@@ -650,27 +650,27 @@ data class n5(
 ) : java.io.Serializable
 
 data class Players2(
-    @SerializedName("3752")
+    @SerializedName("3752",alternate = ["3667"])
     val n3752: n3752,
-    @SerializedName("4330")
+    @SerializedName("4330",alternate = ["4356"])
     val n4330: n4330,
-    @SerializedName("4338")
+    @SerializedName("4338",alternate = ["12518"])
     val n4338: n4338,
-    @SerializedName("4964")
+    @SerializedName("4964",alternate = ["28891"])
     val n4964: n4964,
-    @SerializedName("10167")
+    @SerializedName("10167",alternate = ["5313"])
     val n10167: n10167,
-    @SerializedName("10172")
+    @SerializedName("10172",alternate = ["59736"])
     val n10172: n10172,
-    @SerializedName("11703")
+    @SerializedName("11703",alternate = ["64221"])
     val n11703: n11703,
-    @SerializedName("11706")
+    @SerializedName("11706",alternate = ["63611"])
     val n11706: n11706,
-    @SerializedName("57594")
+    @SerializedName("57594",alternate = ["24669"])
     val n57594: n57594,
-    @SerializedName("57903")
+    @SerializedName("57903",alternate = ["48191"])
     val n57903: n57903,
-    @SerializedName("60544")
+    @SerializedName("60544",alternate = ["57458"])
     val n60544: n60544,
 ) : java.io.Serializable
 

@@ -4,7 +4,7 @@ import javax.inject.Inject
 
 class RemoteDataSource @Inject constructor(private val sportzService: SportzService) {
 
-    suspend fun getDog() =
+    suspend fun getSportzData() =
         sportzService.getSportzData()
 
 }

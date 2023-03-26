@@ -112,8 +112,8 @@ class MatchDetailActivity : AppCompatActivity() {
         teamBVisible: Boolean,
         matchData: SportzResponse,
     ): ArrayList<VisiblePlayer> {
-        val playersTeamA = matchData.teams.n4.players
-        val playersTeamB = matchData.teams.n5.players
+        var playersTeamA = matchData.teams.n4.players
+        var playersTeamB = matchData.teams.n5.players
         playerList = arrayListOf()
         if (teamAVisible) {
             playerList.add(

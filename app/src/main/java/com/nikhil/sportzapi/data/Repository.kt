@@ -19,7 +19,7 @@ class Repository @Inject constructor(
 
     suspend fun getSportzData(): Flow<NetworkResult<SportzResponse>> {
         return flow<NetworkResult<SportzResponse>> {
-            emit(safeApiCall { remoteDataSource.getDog() })
+            emit(safeApiCall { remoteDataSource.getSportzData() })
         }.flowOn(Dispatchers.IO)
     }
 }
