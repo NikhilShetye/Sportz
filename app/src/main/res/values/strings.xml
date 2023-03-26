@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SportzApi</string>
+
+    <string name="view_match_details">View Match Details</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="all">All</string>
+</resources>
