@@ -9,5 +9,7 @@ data class VisiblePlayer(
     var bowlStyle: String,
     var bowlAvg:String,
     var economyRate:String,
-    var wickets:String
+    var wickets:String,
+    var isKeeper:Boolean=false,
+    var isCaptain:Boolean=false
 )

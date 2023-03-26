@@ -118,7 +118,7 @@ class MatchDetailActivity : AppCompatActivity() {
         if (teamAVisible) {
             playerList.add(
                 VisiblePlayer(
-                    playersTeamA.n3632.nameFull + " (WK)",
+                    playersTeamA.n3632.nameFull,
                     playersTeamA.n3632.batting.style,
                     playersTeamA.n3632.batting.average,
                     playersTeamA.n3632.batting.strikerate,
@@ -127,6 +127,8 @@ class MatchDetailActivity : AppCompatActivity() {
                     playersTeamA.n3632.bowling.average,
                     playersTeamA.n3632.bowling.economyrate,
                     playersTeamA.n3632.bowling.wickets,
+                    isKeeper = true,
+                    isCaptain = false
                 )
             )
             playerList.add(
@@ -144,7 +146,7 @@ class MatchDetailActivity : AppCompatActivity() {
             )
             playerList.add(
                 VisiblePlayer(
-                    playersTeamA.n3852.nameFull + " (C)",
+                    playersTeamA.n3852.nameFull ,
                     playersTeamA.n3852.batting.style,
                     playersTeamA.n3852.batting.average,
                     playersTeamA.n3852.batting.strikerate,
@@ -153,6 +155,8 @@ class MatchDetailActivity : AppCompatActivity() {
                     playersTeamA.n3852.bowling.average,
                     playersTeamA.n3852.bowling.economyrate,
                     playersTeamA.n3852.bowling.wickets,
+                    isKeeper = false,
+                    isCaptain = true
                 )
             )
             playerList.add(
@@ -264,7 +268,7 @@ class MatchDetailActivity : AppCompatActivity() {
         if (teamBVisible) {
             playerList.add(
                 VisiblePlayer(
-                    playersTeamB.n10167.nameFull + " (WK)",
+                    playersTeamB.n10167.nameFull ,
                     playersTeamB.n10167.batting.style,
                     playersTeamB.n10167.batting.average,
                     playersTeamB.n10167.batting.strikerate,
@@ -273,6 +277,8 @@ class MatchDetailActivity : AppCompatActivity() {
                     playersTeamB.n10167.bowling.average,
                     playersTeamB.n10167.bowling.economyrate,
                     playersTeamB.n10167.bowling.wickets,
+                    isKeeper = true,
+                    isCaptain = false
                 )
             )
             playerList.add(
@@ -329,7 +335,7 @@ class MatchDetailActivity : AppCompatActivity() {
             )
             playerList.add(
                 VisiblePlayer(
-                    playersTeamB.n4330.nameFull + " (C)",
+                    playersTeamB.n4330.nameFull ,
                     playersTeamB.n4330.batting.style,
                     playersTeamB.n4330.batting.average,
                     playersTeamB.n4330.batting.strikerate,
@@ -338,6 +344,8 @@ class MatchDetailActivity : AppCompatActivity() {
                     playersTeamB.n4330.bowling.average,
                     playersTeamB.n4330.bowling.economyrate,
                     playersTeamB.n4330.bowling.wickets,
+                    isKeeper = false,
+                    isCaptain = true
                 )
             )
             playerList.add(

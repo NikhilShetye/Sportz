@@ -28,10 +28,21 @@ class PlayerAdapter(private val dataSet: ArrayList<VisiblePlayer>,private val on
         /* Bind player name. */
         fun bind(visiblePlayer: VisiblePlayer, position: Int) {
             currentPlayer = visiblePlayer
-            textView.text = currentPlayer!!.name
-            /*if (position==10){
-                textView.setPadding(0,0,0,32)
-            }*/
+            var name = currentPlayer!!.name
+            val captain = " (C) "
+            val keeper = " (WK) "
+            if(visiblePlayer.isCaptain) {
+                name += captain
+                textView.text = name
+            }else{
+                textView.text = name
+            }
+            if(visiblePlayer.isKeeper) {
+                name += keeper
+                textView.text = name
+            }else{
+                textView.text = name
+            }
         }
     }
 
